@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.douhaopeng.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_1"
+        style="@style/TitleStyle"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_below="@id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv_1_1"
+                    style="@style/Left_tv"
+                    android:background="@drawable/kaoshi" />
+
+                <TextView
+                    android:id="@+id/tv_1_2"
+                    style="@style/Right_tv"
+                    android:background="@drawable/kaoshi" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv_2_1"
+                    style="@style/Left_tv"
+                    android:background="@drawable/kaoshi" />
+
+                <TextView
+                    android:id="@+id/tv_2_2"
+
+                    style="@style/Right_tv"
+                    android:background="@drawable/kaoshi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv_3_1"
+                    style="@style/Left_tv"
+                    android:background="@drawable/kaoshi" />
+
+                <TextView
+                    android:id="@+id/tv_3_2"
+
+                    style="@style/Right_tv"
+                    android:background="@drawable/kaoshi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv_4_1"
+                    style="@style/Left_tv"
+                    android:background="@drawable/kaoshi" />
+
+                <TextView
+                    android:id="@+id/tv_4_2"
+                    style="@style/Right_tv"
+                    android:background="@drawable/kaoshi" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/rb"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/rb"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/rb"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
