@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <TextView android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:text="微信"
+        android:gravity="center"
+        android:background="#8fbc8f"/>
+
+    <GridView
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+         android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lv_news"
+         />
+
+    <RadioGroup 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_tab_bg">
+         <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:checked="true"
+            android:text="首页" />
+          <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:checked="true"
+            android:text="首页" />
+           <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:checked="true"
+            android:text="首页" />
+    </RadioGroup>
+</LinearLayout>
